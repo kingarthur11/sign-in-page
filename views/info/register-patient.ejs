@@ -1,0 +1,45 @@
+<%- include('../includes/head.ejs') %>
+
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <%- include('../includes/navigation.ejs') %>
+    <main>
+        <form class="product-form" action="/patient" method="POST">
+            <div class="form-control">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div class="form-control">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <div class="form-control">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="number" name="phoneNumber" id="phoneNumber">
+            </div>
+            <div class="form-control">
+                <label for="maritalStatus">Marital Status</label>
+                <input type="text" name="maritalStatus" id="maritalStatus">
+            </div>
+            <div class="form-control">
+                <label for="occupation">Occupation</label>
+                <input type="text" name="occupation" id="occupation">
+            </div>
+            <div class="form-control">
+                <label for="email">Email-adress</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-control">
+                <label for="nationality">Nationality</label>
+                <input type="text" name="nationality" id="nationality">
+            </div>
+            <div class="form-control">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+            </div>
+            <button type="submit">Register Me</button>
+        </form>
+    </main>
+    
+<%- include('../includes/end.ejs') %>    
